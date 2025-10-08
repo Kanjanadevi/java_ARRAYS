@@ -8,7 +8,7 @@ public static void main (String[] args) {
         arr[i] = sc.nextInt();
     }
     int firstmax=arr[0];
-    int secondmax=arr[0];
+    int secondmax=Integer.MIN_VALUE;
     for(int i=1;i<n;i++){
         if(arr[i]>firstmax){
             firstmax=arr[i];
@@ -19,12 +19,11 @@ public static void main (String[] args) {
             secondmax=arr[i];
         }
     }
-    System.out.println("firstmax+ " "+secondmax);
+    System.out.println(firstmax+ " "+secondmax);
     
     
 }
 }
-
 
 input:
 10 20 30 40 50 
